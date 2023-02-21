@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(./Roboto.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(./Robotobold.ttf);
+    font-weight: bold;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.todo-title {
+    text-align: center;
+    color: #3f3f3f
+}
+
+.todo-form {
+    display: flex;
+    justify-content: center;
+}
+
+.todo-input {
+    margin-right: 15px;
+    
+}
+
+.todo-list {
+    margin-top: 20px;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid gray;
+    border-radius: 5px;
+}
+
+.todo-item > div {
+    display: flex;
+    align-items: center;
+}
+
+.item-delete {
+    margin-left: 10px;
+}
+
+.item-checkbox {
+    margin-left: 10px;
+}
+
+.complete-item {
+    background-color: rgba(0, 255, 0, 0.3);
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 930px) {
+    .container {
+        max-width: 600px;
+    }
+
+    .todo-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .todo-item > div {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 620px) {
+    .container {
+        max-width: 300px;
+    }
+}
